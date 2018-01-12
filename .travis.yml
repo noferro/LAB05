@@ -1,5 +1,5 @@
 language: csharp
 solution: LAB09.sln
-before_install:
-  - sudo apt-get install nunit3-console
-
+install:
+  - nuget restore LAB09.sln
+  - nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner

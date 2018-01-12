@@ -3,6 +3,3 @@ solution: LAB09.sln
 install:
   - nuget restore LAB09.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
-script:
-  - xbuild /p:Configuration=Release LAB09.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./LAB10/LAB09/bin/Debug/nunit.framework.dll

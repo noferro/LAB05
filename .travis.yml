@@ -5,4 +5,4 @@ before_install:
 before_script:
   - nuget restore LAB09.sln
 after_script:
-  - nunit-console LAB09/bin/Release/Tests.dll
+  - nunit-console LAB09/bin/Release/nunit.framework.dll

@@ -9,6 +9,8 @@ install:
 
 before_script:
   - nuget restore LAB09.sln
+script:
+  - xbuild /p:Configuration=Debug LAB09.sln
 after_script:
   - nunit-console LAB09/bin/Debug/nunit.framework.dll
   

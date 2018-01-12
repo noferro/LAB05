@@ -2,9 +2,4 @@ language: csharp
 solution: LAB09.sln
 before_install:
   - sudo apt-get install nunit3-console
-install:  
-  - nuget install NUnit.ConsoleRunner -Version 3.2.0 -OutputDirectory testrunner  
-before_script:
-  - nuget restore LAB09.sln
-after_script:
-  - nunit3-console LAB09/bin/Release/nunit.framework.dll
+

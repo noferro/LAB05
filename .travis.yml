@@ -2,6 +2,7 @@ language: csharp
 solution: LAB09.sln
 install:
   - nuget restore LAB09.sln
+  - nuget NUnit3TestAdapter
   - nuget NUnit -Version 3.9.0 
 script:
   - xbuild /p:Configuration=Release LAB09.sln

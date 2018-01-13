@@ -5,4 +5,4 @@ install:
   - nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release LAB09.sln
-  - mono ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./LAB09/bin/Debug/nunit.framework.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit-console.exe ./LAB09/bin/Debug/nunit.framework.dll

@@ -2,7 +2,7 @@ language: csharp
 solution: LAB09.sln
 install:
   - nuget restore LAB09.sln
-  - nuget NUnit -Version 3.9.0 
+  - nunit3-console net-2.0/nunit.framework.tests.dll
 script:
   - xbuild /p:Configuration=Release LAB09.sln
   - mono ./testrunner/NUnit.Runners.3.9.0/tools/nunit-console.exe ./LAB09/bin/Debug/nunit.framework.dll

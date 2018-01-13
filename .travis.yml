@@ -1,7 +1,7 @@
 language: csharp
 solution: LAB09.sln
 install:
-  - nuget restore solution-name.sln
+  - nuget restore LAB09.sln
   - nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release LAB09.sln

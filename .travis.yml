@@ -4,6 +4,6 @@ install:
   - nuget restore LAB09.sln
   - nuget install NUnit.Runners -Version 3.2.0 -OutputDirectory testrunner -ExcludeVersion
 script:
-  - xbuild /p:Configuration=DebugBSChrome LAB09.sln
+  - msbuild /p:Configuration=Release LAB09.sln
 after_script:
   ./testrunner/NUnit.ConsoleRunner/tools/nunit3-console.exe LAB09.FunctionalTest/bin/DebugBSChrome/LAB09.FunctionalTest.dll

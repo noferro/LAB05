@@ -3,4 +3,4 @@ solution: LAB09.sln
 
 script:
   - xbuild /p:Configuration=Release LAB09.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit-console.exe ./LAB09/bin/Debug/nunit.framework.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.*/tools/nunit-console.exe ./LAB09/bin/Debug/nunit.framework.dll

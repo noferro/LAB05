@@ -6,4 +6,4 @@ install:
 script:
   - msbuild /p:Configuration=Release LAB09.sln
 after_script:
-  - mono ./testrunner/NUnit.ConsoleRunner/tools/nunit3-console.exe LAB09.FunctionalTest/bin/DebugBSChrome/LAB09.FunctionalTest.dll
+  - mono ./testrunner/NUnit.ConsoleRunner/tools/nunit3-console.exe LAB09.FunctionalTest/bin/DebugBSChrome/nunit.framework.dll

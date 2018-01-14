@@ -1,6 +1,9 @@
 language: csharp
 solution: LAB09.sln
-
+install:
+  - nuget restore LAB09.sln
+  - nuget install NUnit.Runners -Version 3.2.0 -OutputDirectory testrunner -ExcludeVersion
 script:
-  - xbuild /p:Configuration=Release LAB09.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.*/tools/nunit-console.exe ./LAB09/bin/Debug/nunit.framework.dll
+  - xbuild /p:Configuration=DebugBSChrome LAB09.sln
+after_script:
+  ./testrunner/NUnit.ConsoleRunner/tools/nunit3-console.exe LAB09.FunctionalTest/bin/DebugBSChrome/LAB09.FunctionalTest.dll

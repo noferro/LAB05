@@ -2,7 +2,7 @@ language: csharp
 solution: LAB09.sln
 install:
   - nuget restore LAB09.sln
-  - nuget install NUnit.Runners -Version 3.9.0 -OutputDirectory testrunner -ExcludeVersion
+  - nuget install NUnit.Runners -Version 3.4.0 -OutputDirectory testrunner -ExcludeVersion
 script:
   - msbuild /p:Configuration=Release LAB09.sln
 after_script:
